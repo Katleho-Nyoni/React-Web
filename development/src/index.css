@@ -49,6 +49,11 @@ nav{
   padding: 1rem;
 }
 
+/* .Landing-Display{
+  background-image: url(./assets/react.svg);
+  background-size: cover;
+} */
+
 body {
   margin: 0;
   display: flex;
