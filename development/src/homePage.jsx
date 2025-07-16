@@ -28,16 +28,24 @@ function LandingDisplay(){
             <button>Learn More</button>
         </div>
         <div className='content-container'>
-            <h3>Comp Sci Fundamentals</h3>
+            <h3>Blender</h3>
             <p>I have had an interest in Computer Science after I learned that it is more like an application of Mathematics. To find out more about my journey:</p>
             <button>Learn More</button>
         </div>
         <div className='content-container'>
-            <h3>Software Eng & Dev</h3>
+            <h3>How to be an Adult</h3>
             <p>Upon my journey on building Fullstack applpications using various softwares, I have realized that I'm constantly trying to solve problems, and this is the beginning of it all.</p>
             <button>Learn More</button>
         </div>
     </div>
+    <footer className='home-footer'>
+        <div>
+            <a href="">Terms</a>
+        </div>
+        <div>
+            <p> &copy; Copyright. All rights reserved. Katleho Nyoni 2025</p>
+        </div>
+    </footer>
     </>
 
     );

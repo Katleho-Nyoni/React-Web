@@ -5,22 +5,20 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --hue: 27;
-  --sat: 69%;
-  --white: hsl(0, 0%, 100%);
-  --purple-primary: rgba(132, 0, 255, 1);
-  --purple-glow: rgba(132, 0, 255, 0.2);
-  --purple-border: rgba(132, 0, 255, 0.8);
-  --border-color: #392e4e;
-  --background-dark: #060010;
-  color-scheme: light dark;
+  --clr-1:red;
+  --clr-2:magenta;
+  --clr-3:blue;
+  --clr-4:rgb(216, 143, 6);
+  /* --clr-5:crimson; */
+
+  
 }
 
 * { /* Targeting the whole page
@@ -97,7 +95,6 @@ Icon{
 }
 
 .Highlights{
-  background-color:dimgrey;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2,170px);
@@ -106,19 +103,44 @@ Icon{
   height: 40rem;
 }
 
-
-
 .content-container{
-  /* display:inline-block; */
   justify-self: center;
-  /* height: 15rem; */
   width: 30vw;
   background-color: black;
   gap: 2rem;
   border-radius: 12px;
   padding: 1rem;
-
+  outline: 1rem SOLID transparent;
+  position: relative;
 }
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation{
+  0% {--gradient-angle: 0deg}
+  100% {--gradient-angle: 360deg}
+}
+
+.content-container::before, .content-container::after{
+  content: "";
+  position: absolute;
+  inset: -0.3rem;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1rem;
+  background-image: conic-gradient(from var(--gradient-angle),var(--clr-1),var(--clr-2),var(--clr-3),var(--clr-4),var(--clr-1));
+  animation: rotation 5s linear infinite;
+}
+
+/* .content-container::after{
+  filter: blur(0.5rem);
+} */
+
+
 
 /* body {
   margin: 0;
@@ -152,14 +174,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.home-footer{
+  /* color: ; */
+  background-color: darkslategrey;
+}
+
+/* MEDIA QUERIES */
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
+  /* a:hover {
     color: #747bff;
-  }
+  } */
   button {
     background-color: #f9f9f9;
   }
