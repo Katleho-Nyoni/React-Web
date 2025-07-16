@@ -29,7 +29,7 @@
 
 a {
   font-weight: 500;
-  color: black;
+  color: crimson;
   text-decoration: none;
 }
 a:hover {
@@ -52,6 +52,9 @@ ul{
 
 nav li {
   display: block;
+}
+nav a{
+  color: black;
 }
 
 nav{
@@ -85,7 +88,7 @@ Icon{
   background-size: cover;
   background-repeat: repeat;
   background-attachment:fixed;
-  height: 40rem;
+  height: 100vh;
   width: 100%;
   opacity: 0.5;
   /* object-position: -1; */
@@ -103,7 +106,7 @@ Icon{
   height: 40rem;
 }
 
-.content-container{
+.content-container, .secret{
   justify-self: center;
   width: 30vw;
   background-color: black;
@@ -125,7 +128,7 @@ Icon{
   100% {--gradient-angle: 360deg}
 }
 
-.content-container::before, .content-container::after{
+.content-container::before, .content-container::after,.secret::before,.secret::after{
   content: "";
   position: absolute;
   inset: -0.3rem;
@@ -139,6 +142,38 @@ Icon{
 /* .content-container::after{
   filter: blur(0.5rem);
 } */
+
+.slideshow, .tab-section, .main-project, .current-project{
+  height: 100vh;
+  border-bottom: 0.1px SOLID white;
+}
+
+.tab:hover{
+  cursor: pointer;
+}
+
+.tab-section{
+  /* height: 20rem; */
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  /* position:relative; */
+}
+
+/* .main-project, .current-prpoject{
+  height: 25rem;
+} */
+
+.card-container{
+  justify-self: center;
+  width: 30vw;
+  /* background-color: rgb(49, 208, 236); */
+  gap: 2rem;
+  border-radius: 12px;
+  padding: 1rem;
+  outline: 1px SOLID whitesmoke;
+  position: relative;
+}
 
 
 
@@ -179,6 +214,54 @@ button:focus-visible {
   background-color: darkslategrey;
 }
 
+.form-parent{
+  background-color: white;
+  color: black;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form, .login-form {
+    padding: 3rem;
+    border-radius: 2rem;
+    width: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+    box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}
+
+.signup-form{
+  height:13rem;
+}
+
+input {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background-color: white;
+    color: dimgray;
+}
+
+input:focus{
+    outline-color: crimson;
+    
+}
+
+.btn{
+    width: 15.5rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 
 @media (prefers-color-scheme: light) {
@@ -186,10 +269,18 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
-  /* a:hover {
+  a:hover {
     color: #747bff;
-  } */
+  }
   button {
     background-color: #f9f9f9;
   }
 }
+
+.sandlana-secret{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+

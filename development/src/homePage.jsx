@@ -1,4 +1,5 @@
 import {Helmet} from 'react-helmet'
+import FooterSection from './footer'
 
 function LandingDisplay(){
     let a = "👑";
@@ -38,14 +39,7 @@ function LandingDisplay(){
             <button>Learn More</button>
         </div>
     </div>
-    <footer className='home-footer'>
-        <div>
-            <a href="">Terms</a>
-        </div>
-        <div>
-            <p> &copy; Copyright. All rights reserved. Katleho Nyoni 2025</p>
-        </div>
-    </footer>
+    <FooterSection />
     </>
 
     );
@@ -54,7 +48,7 @@ export default function HomePage(){
     return(
         <>
         <Helmet>
-            <title>Katleho Nyoni | Lord Eagle(L.E)</title>
+            <title>Katleho Nyoni</title>
         </Helmet>
         <LandingDisplay />
         </>

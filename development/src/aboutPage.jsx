@@ -1,14 +1,17 @@
 import {Helmet} from 'react-helmet'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import FooterSection from './footer';
 
 function AboutTab(){
     let x = "🦅",y = "💻", z = "☯";
     return(
-        <Tabs>
-            <TabList>
-                <Tab>{x}Personality</Tab>
-                <Tab>{y}Tech-Stack</Tab>
-                <Tab>{z}Beliefs</Tab>
+        <>
+        <div className='tab-section'>
+            <Tabs>
+            <TabList className='tab'>
+                <Tab>{x} <b>Personality</b></Tab>
+                <Tab>{y} <b>Tech-Stack</b></Tab>
+                <Tab>{z} <b>Beliefs</b></Tab>
             </TabList>
 
             <TabPanel>
@@ -27,6 +30,8 @@ function AboutTab(){
                 <p>A self-proclaimed Philosopher at heart.</p>
             </TabPanel>
         </Tabs>
+        </div>
+        </>
     );
 }
 
@@ -40,6 +45,7 @@ export default function AboutPage(){
             <div className='about-tabs'>
                 <AboutTab />
             </div>
+            <FooterSection />
         </>
     );
 }

@@ -5,8 +5,8 @@ import HomePage from './homePage'
 import AboutPage from './aboutPage'
 import ContactPage from './contactPage'
 import ProjectPage from './projectPage'
-import Sandlana from './sandlana'
-import SandlanaPoems from './sandlanaPoems'
+import Sandlana from './sandlanaPage'
+// import SandlanaPoems from './sandlanaPoems'
 import SignIn from './loginAccount'
 import SignUp from './createAccount'
 import DataGroup from './dataGroup'
@@ -19,10 +19,10 @@ const routes = [
   {path: '/contact', element: <ContactPage />},
   {path: '/projects', element: <ProjectPage />},
   ],},
+  {path: '/sandlana', element: <Sandlana />},
   {path: '/a/login', element: <SignIn />},
   {path: '/a/signup', element: <SignUp />},
   {path: '/datagroup', element: <DataGroup />},
-  {path: '/sandlana', element: <Sandlana />},
 ];
 
 // const routes = [

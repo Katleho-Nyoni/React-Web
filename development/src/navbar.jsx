@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import {Icon, InlineIcon} from "@iconify/react"
 // import home from "@iconify-icons/mdi/home"
+// import {Icon, InlineIcon} from "@iconify/react"
+
 
 export default function NavBar(){
     return(
