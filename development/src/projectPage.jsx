@@ -54,7 +54,7 @@ function MainProjects(){
             <p>This is a team of AI Agents that take your dataset(csv) and 
                 generate a pdf Report.</p>
             <button>Learn More</button>
-            <button><Link to='/a/login'>Use Demo</Link></button>
+            <Link to='/a/login'><button>Use Demo</button></Link>
             </div>
         </div>
         </>

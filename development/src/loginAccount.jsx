@@ -2,9 +2,11 @@ import { useState } from "react";
 import {Link, useNavigate} from 'react-router-dom';
 import { Icon,InlineIcon } from "@iconify/react";
 import google from "@iconify-icons/mdi/google" 
-import {getAuth, singInWithEmailAndPassword } from 'firebase/auth';
+import {getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 export default function SignIn(){
+  // e.preventDefault();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -13,7 +15,7 @@ export default function SignIn(){
 
   async function login() {
     try{
-      await singInWithEmailAndPassword(getAuth(),email,password);
+      await signInWithEmailAndPassword(getAuth(),email,password);
       navigate('/datagroup');
     } catch (e) {
       setError(e.message);
@@ -24,7 +26,7 @@ export default function SignIn(){
   <>
     <div className="form-parent">
       <div className="login-form">
-        <form action="GET">
+        <div /*onSubmit={login}*/>
         <h1>Login</h1>
         {error && <p>{error}</p>}
           <div>
@@ -43,7 +45,7 @@ export default function SignIn(){
               <p>Don't have an Account? <Link to='/a/signup'> Sign Up </Link></p>
           </div>
       
-        </form>
+        </div>
       </div>
     </div>
   </>
