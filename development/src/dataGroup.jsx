@@ -1,7 +1,12 @@
+import SplashCursor from "./splashCursor";
+import { getAuth, signOut } from "firebase/auth";
+
 export default function DataGroup(){
     return(
         <>
-        <h1>Welcome to DG Consulting</h1>
+        <SplashCursor />
+        <h1>Welcome to DG Consulting</h1>      
+        <button onClick={()=>signOut(getAuth())}>Sign Out</button>
         <div className="parent-container">
             <div className='container'>
             <input type="file" name="" id="" required />
