@@ -247,7 +247,8 @@ input {
     border-radius: 0.3rem;
     background-color: white;
     color: dimgray;
-    cursor:pointer;
+    cursor:pointer
+    ;
 }
 
 input:focus{
