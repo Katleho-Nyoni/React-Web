@@ -20,23 +20,23 @@ function LandingDisplay(){
         {/* <p>I'm constantly learning, harnessing ideas & integrating different fields to implement my ideas. Below are the things I'm currently learning:</p> */}
         <div className='content-container'>
             <h3>Comp Sci Fundamentals</h3>
-            <p>I have had an interest in Computer Science after I learned that it is more like an application of Mathematics. To find out more about my journey:</p>
-            <button>Learn More</button>
+            <p>Computer Science(CS) is just Applied Mathematics. I'm leveraging this to learn CS fundamentals including DSA & the MERN stack.</p>
+            {/* <button>Learn More</button> */}
         </div>
         <div className='content-container'>
             <h3>Software Eng & Dev</h3>
             <p>Upon my journey on building Fullstack applpications using various softwares, I have realized that I'm constantly trying to solve problems, and this is the beginning of it all.</p>
-            <button>Learn More</button>
+            {/* <button>Learn More</button> */}
         </div>
         <div className='content-container'>
             <h3>Blender</h3>
-            <p>I have had an interest in Computer Science after I learned that it is more like an application of Mathematics. To find out more about my journey:</p>
-            <button>Learn More</button>
+            <p>Learning this 3D animation software will provide me with the skills to implement my project ideas.</p>
+            {/* <button>Learn More</button> */}
         </div>
         <div className='content-container'>
-            <h3>How to be an Adult</h3>
-            <p>Upon my journey on building Fullstack applpications using various softwares, I have realized that I'm constantly trying to solve problems, and this is the beginning of it all.</p>
-            <button>Learn More</button>
+            <h3>Artificial Intelligence(AI)</h3>
+            <p>Constantly learning about cutting-edge Frameworks such AutoGen Studio and LangGraph to integrate AI solutions to real-world problems.</p>
+            {/* <button>Learn More</button> */}
         </div>
     </div>
     <FooterSection />
