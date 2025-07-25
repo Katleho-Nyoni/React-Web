@@ -14,13 +14,24 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 
-app.get('/hello', (req,res)=>{ // Get Report from AI Agent
+app.post('/api/uploads', (req,res)=>{ // Store The Dataset
+    req.forEach((file) => {
+        tracking.push({
+            analysedFile: file.originalname,
+            correspondingReport: ''
+        });
+    });
+    res.send('This is a POST endpoint!');
+});
+
+app.post('/api/agent-analyser',(req,res)=>{
+    // Sends the file to the AI Agent for analysis
+})
+app.get('/api/reports', (req,res)=>{ // Get Report from AI Agent
     res.send('Hello World! This is a GET endpoint!');
 });
 
-app.post('/hello', (req,res)=>{ // Store The Dataset
-    res.send('This is a POST endpoint!');
-});
+
 
 // app.put('/hello', (req,res)=>{
 //     res.send('Hi! This is a PUT endpoint!');
