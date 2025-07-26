@@ -13,25 +13,6 @@ export default function DataGroup(){
                 <button type="submit">Generate Report</button>
             </div>
         </div>
-        <script>
-            const fileInput = document.getElementById('UploadedFile');
-            const dataContainer = document.getElementById('dataUpload');
-
-            dataUpload.addEventListener("submit", e => {
-                e.preventDefault();
-
-                const endpoint = "server.js";
-                const formData = new FormData();
-
-                formData.append("UploadedFile", fileInput.files[0]);
-
-                fetch(endpoint,{
-                    method:"POST",
-                    body:formData
-                }).catch(console.error);
-            });
-            
-        </script>
         </>
     );
 }
