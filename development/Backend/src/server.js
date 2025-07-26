@@ -1,44 +1,79 @@
 import express from 'express';
 import cors from 'cors';
+import multer from 'multer';
+import path from 'path';
+import fs from 'fs';
 
 const app = express();
 app.use(express.json());
 
-const tracking = [{
-    analysedFile: '',
-    correspondingReport: ''
-}]
+const uploadFolder = './uploads';
+
+if (!fs.existsSync(uploadFolder)) {
+    fs.mkdirSync(uploadFolder);
+}
+
+const storage = multer.diskStorage({
+    destination:uploadFolder,
+    filename: (req,res,cb) =>{
+        cb(null,Date.now() + '-' + file.originalname);
+    }
+});
+
+const upload = multer({ storage });
+
+let tracking = [];
+
+
 
 app.use(cors({
     origin: 'http://localhost:8000',
-    methods: ['GET', 'POST', 'PUT', 'DELETE']
+    methods: ['GET', 'POST']
 }));
 
-app.post('/api/uploads', (req,res)=>{ // Store The Dataset
-    req.forEach((file) => {
-        tracking.push({
-            analysedFile: file.originalname,
-            correspondingReport: ''
-        });
+// Test route
+app.get('/hello', (req, res) => {
+    res.send('Hello World! Server is running!');
+});
+
+// Upload dataset + generate dummy report
+app.post('/upload', upload.single('dataset'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).send("No file uploaded");
+    }
+
+    // 1) Save tracking info
+    const reportName = `report-${req.file.filename}.html`;
+    tracking.push({
+        analysedFile: req.file.filename,
+        correspondingReport: reportName
     });
-    res.send('This is a POST endpoint!');
+
+    // 2) Create a dummy report (you'll replace this with real AI code later)
+    const dummyReportContent = `
+        <html>
+        <body>
+            <h1>Report for ${req.file.originalname}</h1>
+            <p>Analysis completed successfully.</p>
+        </body>
+        </html>
+    `;
+    fs.writeFileSync(path.join(reportsFolder, reportName), dummyReportContent);
+
+    res.send(`File ${req.file.originalname} uploaded and report generated!`);
 });
 
-app.post('/api/agent-analyser',(req,res)=>{
-    // Sends the file to the AI Agent for analysis
-})
-app.get('/api/reports', (req,res)=>{ // Get Report from AI Agent
-    res.send('Hello World! This is a GET endpoint!');
+// View all uploaded datasets and their reports
+app.get('/uploads', (req, res) => {
+    res.json(tracking);
 });
 
+// Download/view a specific report
+app.get('/report/:filename', (req, res) => {
+    const reportPath = path.join(reportsFolder, req.params.filename);
 
-
-// app.put('/hello', (req,res)=>{
-//     res.send('Hi! This is a PUT endpoint!');
-// });
-
-
-
-app.listen(8000, function(){
-    console.log('Server is running on port 8000');  
+    if (!fs.existsSync(reportPath)) {
+        return res.status(404).send("Report not found");
+    }
+    res.sendFile(path.resolve(reportPath));
 });
