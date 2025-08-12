@@ -13,6 +13,7 @@ dist-ssr
 *.local
 *.conda
 Backend/.env
+Backend/langgraph-py-env
 
 # Editor directories and files
 .vscode/*
