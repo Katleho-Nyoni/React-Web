@@ -98,3 +98,28 @@ dataUpload.addEventListener("submit", e => {
                 }).catch(console.error);
 });
             
+// *****************************************************************************************
+
+/**  
+import express from "express";
+import multer from "multer";
+import fetch from "node-fetch";
+
+const app = express();
+const upload = multer();
+
+app.post("/upload", upload.single("file"), async (req, res) => {
+  const formData = new FormData();
+  formData.append("file", req.file.buffer, req.file.originalname);
+
+  const response = await fetch("http://localhost:8000/run-agent", {
+    method: "POST",
+    body: formData
+  });
+  
+  const data = await response.json();
+  res.json(data);
+});
+
+app.listen(3000, () => console.log("JS server running on http://localhost:3000"));
+*/
