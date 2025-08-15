@@ -6,7 +6,14 @@ export default function DataGroup(){
     const [selectedFile, setSelectedFile] = useState(null);
 
     const handleFileChange = (e) => {
-        setSelectedFile(e.target.files[0]); // pick the first file
+        const file = e.target.files[0];
+        if (file && file.type !== "text/csv") {
+            alert("Only CSV files are allowed!");
+            e.target.value = ""; 
+        return;
+         }
+
+        setSelectedFile(file);
     };
 
     const handleUpload = async () => {
