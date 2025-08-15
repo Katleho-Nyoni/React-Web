@@ -15,7 +15,7 @@ if (!fs.existsSync(uploadFolder)) {
 
 const storage = multer.diskStorage({
     destination:uploadFolder,
-    filename: (req,res,cb) =>{
+    filename: (req,file,cb) =>{
         cb(null,Date.now() + '-' + file.originalname);
     }
 });
@@ -37,7 +37,7 @@ app.get('/hello', (req, res) => {
 });
 
 // Upload dataset + generate dummy report
-app.post('/upload', upload.single('dataset'), (req, res) => {
+app.post('/uploads', upload.single('dataset'), (req, res) => {
     if (!req.file) {
         return res.status(400).send("No file uploaded");
     }
