@@ -27,7 +27,7 @@ export default function DataGroup(){
         formData.append("dataset", selectedFile); // <-- must match server.js field name
 
         try {
-            const response = await fetch("http://localhost:5000/uploads", {
+            const response = await fetch("http://localhost:5174/uploads", {
                 method: "POST",
                 body: formData
             });
