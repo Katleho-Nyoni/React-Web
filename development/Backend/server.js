@@ -52,12 +52,18 @@ app.post('/uploads', upload.single('dataset'), (req, res) => {
 
     // 1) Save tracking info
     tracking.push({
-        analysedFile: req.file.filename,});
+        analysedFile: req.file.filename,
+        uploadedAt: new Date()    
+    });
 
-       res.send(`${req.file.originalname} uploaded successfully!`);
-    
-    fs.copyFile(req.file.path,'./database');
-
+    const destPath = path.join(databaseFolder, req.file.filename);
+    fs.copyFile(req.file.path, destPath, (err) => {
+        if (err){
+            console.error('Error copying file:', err);
+            return res.status(500).send('Error copying file to database folder');
+        }
+     res.send(`${req.file.originalname} uploaded successfully!`);
+})
 });
 
 const PORT = 5174;
