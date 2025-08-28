@@ -36,14 +36,14 @@ a:hover {
   color: magenta;
 }
 
-nav ul{
+ul {
   list-style: none;
   list-style-type: none;
   /* padding: 1rem; */
   margin: 0;
 }
 
-ul{
+nav ul{
   display: flex;
   gap: 5rem;
   padding: 0;
@@ -148,7 +148,7 @@ Icon{
   border-bottom: 0.1px SOLID white;
 }
 
-.tab:hover{
+.tab-list:hover{
   cursor: pointer;
 }
 
@@ -157,7 +157,20 @@ Icon{
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  /* position:relative; */
+  /* position:absolute; */
+}
+
+.tab-panel {
+  display: list-item;
+  justify-items: center;
+
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
 }
 
 /* .main-project, .current-prpoject{

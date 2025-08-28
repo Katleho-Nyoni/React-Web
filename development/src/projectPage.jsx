@@ -2,6 +2,7 @@ import {Helmet} from 'react-helmet'
 import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FooterSection from './footer';
+// import './components.css';
 
 function SlinderNews(){
     return(
@@ -19,13 +20,13 @@ return(
     <>
     <div className='tab-section'>
         <Tabs>
-        <TabList className='tab'>
-            <Tab>{x} <b>Books</b> </Tab>
-            <Tab>{y} <b>Reports</b> </Tab>
-            <Tab>{z} <b>Contributions</b> </Tab>
+        <TabList className='tab-list'>
+            <Tab className='tab'>{x} <b>Books</b> </Tab>
+            <Tab className='tab'>{y} <b>Reports</b> </Tab>
+            <Tab className='tab'>{z} <b>Contributions</b> </Tab>
         </TabList>
 
-        <TabPanel>
+        <TabPanel className='tab-panel'>
             <p>This section will include the books I have written alone or concurrently with other authors.</p>
         </TabPanel>
         <TabPanel>
@@ -35,7 +36,7 @@ return(
                 <li><a href="https://rpubs.com/LordEagle/TSA1">Forecasting the Sales of Food & Beverages of RSA</a> </li>
             </ol>
         </TabPanel>
-        <TabPanel>
+        <TabPanel className ='tab-panel'>
            <p> I haven't contributed to any open-source project yet.</p>
         </TabPanel>
     </Tabs>

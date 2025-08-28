@@ -8,25 +8,34 @@ function AboutTab(){
         <>
         <div className='tab-section'>
             <Tabs>
-            <TabList className='tab'>
-                <Tab>{x} <b>Personality</b></Tab>
-                <Tab>{y} <b>Tech-Stack</b></Tab>
-                <Tab>{z} <b>Beliefs</b></Tab>
+            <TabList className='tab-list'>
+                <Tab className='tab'>{x} <b>Personality</b></Tab>
+                <Tab className='tab'>{y} <b>Tech-Stack</b></Tab>
+                <Tab className='tab'>{z} <b>Beliefs</b></Tab>
             </TabList>
 
-            <TabPanel>
+            <TabPanel className='tab-panel'>
                 <p>My Personality</p>
             </TabPanel>
-            <TabPanel>
-                <ul>
-                    <li>MS Office Suite</li>
-                    <li>C/C++</li>
-                    <li>CSS</li>
-                    <li>LaTeX</li>
-                    <li>Others</li>
-                </ul>
+            <TabPanel className='tab-panel'>
+                <div className='tech-stack'>
+                    <ul>
+                        <li>C/C++</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>JavaScript</li>
+                        <li>LangGraph</li>
+                        <li>LaTeX</li>
+                        <li>MATLAB</li>
+                        <li>NextJS</li>
+                        <li>NodeJS/ExpressJS</li>
+                        <li>R/RStudio</li>
+                        <li>ReactJS</li>
+                        <li>SQL/PostgresSQL</li>
+                    </ul>
+                </div>
             </TabPanel>
-            <TabPanel>
+            <TabPanel className='tab-panel'>
                 <p>A self-proclaimed Philosopher at heart.</p>
             </TabPanel>
         </Tabs>
