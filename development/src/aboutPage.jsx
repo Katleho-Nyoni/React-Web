@@ -48,11 +48,13 @@ export default function AboutPage(){
     return(
         <>
         <Helmet>
-            <title>About | L.E Nyoni</title>
+            <title>About Lord Eagle</title>
         </Helmet>
-            <h1>About Me</h1>
-            <div className='about-tabs'>
-                <AboutTab />
+            <div className='about-section'>
+                <p>Katleho Nyoni is also an author with the pen name "Lord Eagle". 
+                His contributions not only span teaching, technology and the arts,
+                but are also rooted in philosophy and UBUNTU.</p>
+                {/* <AboutTab /> */}
             </div>
             <FooterSection />
         </>

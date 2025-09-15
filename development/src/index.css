@@ -249,6 +249,17 @@ button:focus-visible {
   font-size: 1.5rem;
 }
 
+.about-section {
+  /* display:inline;
+  justify-content: center;
+  align-items: center; */
+  height: 35rem;
+  font-size: 1.5rem;
+}
+/* .about-section{
+  
+} */
+
 .form-parent{
   background-color: white;
   color: black;
