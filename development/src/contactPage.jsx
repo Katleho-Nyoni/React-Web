@@ -5,9 +5,11 @@ export default function ContactPage(){
     return(
         <>
         <Helmet>
-            <title>Contact | L.E Nyoni</title>
+            <title>Contact Lord Nyoni</title>
         </Helmet>
-            <h1>Connect</h1>
+            <div className='contact-info'>
+                <p>Text Me on LinkedIn or Facebook:</p>
+            </div>
         <FooterSection />
         </>
     );
