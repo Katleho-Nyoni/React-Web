@@ -55,6 +55,7 @@ nav li {
 }
 nav a{
   color: black;
+  font-size: 1.3rem;
 }
 
 nav{
@@ -84,17 +85,22 @@ Icon{
 }
 
 .Landing-Display{
-  background-image: url(./assets/Necklace.jpg);
+  background-image: url(./assets/Eagle.webp);
   background-size: cover;
   background-repeat: repeat;
   background-attachment:fixed;
   height: 100vh;
   width: 100%;
   /* opacity: 0.5; */
-  /* object-position: -1; */
+  object-position: -1;
   justify-content: center;
   align-content: center;
   text-justify: newspaper;
+}
+
+.Landing-Display p, .Landing-Display h4, .Landing-Display blockquote {
+  font-size: 1.2rem;
+  /* font-weight: 100; */
 }
 
 .Highlights{

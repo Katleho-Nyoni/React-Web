@@ -5,45 +5,55 @@ function LandingDisplay(){
     let a = "👑";
     return(
     <>
-    <div className='Landing-Display'>
-        <h1>Katleho Nyoni</h1>
-        <p>is not just a name, it's a <b>Brand</b></p>
-        <b>Worth Remembering!</b>
-        <p>And this is not just my portfolio, but my identity as it incorporates my ideas, personality & everything inbetween.</p>
-        <h4>A Universalist at Heart{a}</h4>
-        <blockquote>Jack of all trades, master of none, though oftentimes better than a master of one.</blockquote>
-    </div>
-    <div>
-        <h1>Currently Learning</h1>
-    </div>
-    <div className='Highlights'>
-        {/* <p>I'm constantly learning, harnessing ideas & integrating different fields to implement my ideas. Below are the things I'm currently learning:</p> */}
-        <div className='content-container'>
-            <h3>Comp Sci Fundamentals</h3>
-            <p>Computer Science(CS) is just Applied Mathematics. I'm leveraging this to learn CS fundamentals including DSA & the MERN stack.</p>
-            {/* <button>Learn More</button> */}
+        <div className='Landing-Display'>
+            {/* <img src="./assets/Eagle.webp" alt="" style={{width: "100vw", height: "100vh", zIndex: "-1"}} /> */}
+            <h1>Katleho Nyoni</h1> <br />
+            <p>is not just a name, it's a</p>
+            <p><b>Brand Worth Remembering!</b></p>
+            {/* <p>And this is not just my portfolio, but my identity as it incorporates My </p>
+            <p>
+                <ul>
+                    <li>Ideas</li>
+                    <li>Personality</li>
+                    <li>Everything inbetween.</li>
+                </ul>
+            </p> */}
+            <br />
+            <h4>A Universalist at Heart{a}</h4>
+            <blockquote>Jack of all trades, master of none, <br />
+                 though oftentimes better than a master of one.</blockquote>
         </div>
-        <div className='content-container'>
-            <h3>Software Eng & Dev</h3>
-            <p>Upon my journey on building Fullstack applpications using various softwares, I have realized that I'm constantly trying to solve problems, and this is the beginning of it all.</p>
-            {/* <button>Learn More</button> */}
+        <div>
+            <h1>Currently Learning</h1>
         </div>
-        <div className='content-container'>
-            <h3>Blender</h3>
-            <p>Learning this 3D animation software will provide me with the skills to implement my project ideas.</p>
-            {/* <button>Learn More</button> */}
+        <div className='Highlights'>
+            {/* <p>I'm constantly learning, harnessing ideas & integrating different fields to implement my ideas. Below are the things I'm currently learning:</p> */}
+            <div className='content-container'>
+                <h3>Comp Sci Fundamentals</h3>
+                <p>Computer Science(CS) is just Applied Mathematics. I'm leveraging this to learn CS fundamentals including DSA & the MERN stack.</p>
+                {/* <button>Learn More</button> */}
+            </div>
+            <div className='content-container'>
+                <h3>Software Eng & Dev</h3>
+                <p>Upon my journey on building Fullstack applpications using various softwares, I have realized that I'm constantly trying to solve problems, and this is the beginning of it all.</p>
+                {/* <button>Learn More</button> */}
+            </div>
+            <div className='content-container'>
+                <h3>Blender</h3>
+                <p>Learning this 3D animation software will provide me with the skills to implement my project ideas.</p>
+                {/* <button>Learn More</button> */}
+            </div>
+            <div className='content-container'>
+                <h3>Artificial Intelligence(AI)</h3>
+                <p>Constantly learning about cutting-edge Frameworks such AutoGen Studio and LangGraph to integrate AI solutions to real-world problems.</p>
+                {/* <button>Learn More</button> */}
+            </div>
         </div>
-        <div className='content-container'>
-            <h3>Artificial Intelligence(AI)</h3>
-            <p>Constantly learning about cutting-edge Frameworks such AutoGen Studio and LangGraph to integrate AI solutions to real-world problems.</p>
-            {/* <button>Learn More</button> */}
-        </div>
-    </div>
-    <FooterSection />
+        <FooterSection />
     </>
-
     );
 }
+
 export default function HomePage(){
     return(
         <>
