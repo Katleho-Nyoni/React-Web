@@ -232,6 +232,21 @@ button:focus-visible {
 .home-footer{
   /* color: ; */
   background-color: darkslategrey;
+  height: 5rem;
+}
+
+.home-footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  font-size: 1.5rem;
 }
 
 .form-parent{
