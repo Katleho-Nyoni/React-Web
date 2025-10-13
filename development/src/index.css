@@ -86,7 +86,7 @@ Icon{
 }
 
 .Landing-Display{
-  background-image: url(./assets/Eagle.webp);
+  /* background-image: url(./assets/Eagle.webp); */
   background-size: cover;
   background-repeat: repeat;
   background-attachment:scroll;

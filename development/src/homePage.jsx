@@ -1,12 +1,14 @@
 import {Helmet} from 'react-helmet'
 import FooterSection from './footer'
+import { HeroPicture } from './assets/Eagle.webp'
 
 function LandingDisplay(){
     let a = "👑";
     return(
     <>
+        <img src={HeroPicture} alt="" style={{width: "100vw", height: "100vh", zIndex: "-1"}} />
+
         <div className='Landing-Display'>
-            {/* <img src="./assets/Eagle.webp" alt="" style={{width: "100vw", height: "100vh", zIndex: "-1"}} /> */}
             <h1>Katleho Nyoni</h1> <br />
             <p>is not just a name, it's a</p>
             <p><b>Brand Worth Remembering!</b></p>
