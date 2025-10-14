@@ -74,11 +74,16 @@ nav{
   /* padding: 1rem; */
     /* background-color: crimson; */
     /* position:fixed; */
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     height: 12vh;
 }
 
+nav img{
+  height:12vh;
+  justify-content: flex-start;
+  /* ali */
+}
 /* Link{
   display: "flex", 
     flexDirection: "column", 
