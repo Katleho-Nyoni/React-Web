@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import iLogo from './assets/iLogo.png';
+import iLogo from './assets/iLogo.png';
 // import home from "@iconify-icons/mdi/home"
 // import {Icon, InlineIcon} from "@iconify/react"
 
@@ -9,9 +9,9 @@ export default function NavBar(){
         <>
             
             <nav>
-                {/* <a href="">
-                    <img src={iLogo} alt="" />
-                </a> */}
+                <Link to='/'>
+                    <img src={iLogo} alt="Katium Logo" />
+                </Link>
                 
                 <ul>
                     <li><Link to='/'> Home</Link></li>
