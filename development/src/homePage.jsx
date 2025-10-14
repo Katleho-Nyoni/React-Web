@@ -1,29 +1,22 @@
 import {Helmet} from 'react-helmet'
 import FooterSection from './footer'
-import { HeroPicture } from './assets/Eagle.webp'
+import HeroPicture from './assets/Eagle.webp'
 
 function LandingDisplay(){
     let a = "👑";
     return(
     <>
-        <img src={HeroPicture} alt="" style={{width: "100vw", height: "100vh", zIndex: "-1"}} />
-
-        <div className='Landing-Display'>
-            <h1>Katleho Nyoni</h1> <br />
-            <p>is not just a name, it's a</p>
-            <p><b>Brand Worth Remembering!</b></p>
-            {/* <p>And this is not just my portfolio, but my identity as it incorporates My </p>
-            <p>
-                <ul>
-                    <li>Ideas</li>
-                    <li>Personality</li>
-                    <li>Everything inbetween.</li>
-                </ul>
-            </p> */}
-            <br />
-            <h4>A Universalist at Heart{a}</h4>
-            <blockquote>Jack of all trades, master of none, <br />
-                 though oftentimes better than a master of one.</blockquote>
+        <div className='Hero-Section'>
+            <img src={HeroPicture} alt=""/>
+            <div className='Landing-Display'>
+                <h1>Katleho Nyoni</h1> <br />
+                <p>is not just a name, it's a</p>
+                <p><b>Brand Worth Remembering!</b></p>
+                <br />
+                <h4>A Universalist at Heart{a}</h4>
+                <blockquote>Jack of all trades, master of none, <br />
+                    though oftentimes better than a master of one.</blockquote>
+            </div>
         </div>
         <div>
             <h1>Currently Learning</h1>
