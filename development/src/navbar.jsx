@@ -26,7 +26,7 @@ export default function NavBar(){
                     {/* <li><Link to='/projects'><Icon icon={project}/> Projects</Link></li> */}
                 </ul>
 
-                <a href="katieum.co.za">
+                <a href="" target="https://katieum.co.za" >
                     <img src={Katieum} alt="Katieum Logo" />
                 </a>
             </nav>
