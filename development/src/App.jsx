@@ -11,8 +11,10 @@ const routes = [
   children: [
   {path: '/', element: <HomePage />},
   {path: '/about', element: <AboutPage />},
-  {path: '/contact', element: <ContactPage />},
+  // {path: '/contact', element: <ContactPage />},
   {path: '/projects', element: <ProjectPage />},
+  {path: '/katieum', element: <KatieumPage />},
+  {path: '/products', element: <ProductsPage />},
   ],},
 ];
 
