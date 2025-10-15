@@ -18,28 +18,26 @@ function TabProjects(){
     let x = "📖", y = "📊",z = "🛠";
 return(
     <>
-    <div className='tab-section'>
-        <Tabs>
-        <TabList className='tab-list'>
-            <Tab className='tab'>{x} <b>Books</b> </Tab>
-            <Tab className='tab'>{y} <b>Reports</b> </Tab>
-            <Tab className='tab'>{z} <b>Contributions</b> </Tab>
-        </TabList>
+    <div className='col-6 tab p-5'>
+        <ul className=''>
+            <li className='tab'>{x} <b>Books</b> </li>
+            <li className='tab'>{y} <b>Reports</b> </li>
+            <li className='tab'>{z} <b>Contributions</b> </li>
+        </ul>
 
-        <TabPanel className='tab-panel'>
+        <div className='content'>
             <p>This section will include the books I have written alone or concurrently with other authors.</p>
-        </TabPanel>
-        <TabPanel>
+        </div>
+        <div className='content'>
             <p>Below are the reports I have written</p>
             <ol>
                 <li><a href="">Employee's Satisfaction</a></li>
                 <li><a href="https://rpubs.com/LordEagle/TSA1">Forecasting the Sales of Food & Beverages of RSA</a> </li>
             </ol>
-        </TabPanel>
-        <TabPanel className ='tab-panel'>
+        </div>
+        <div className ='content'>
            <p> I haven't contributed to any open-source project yet.</p>
-        </TabPanel>
-    </Tabs>
+        </div>
     </div>
     </>
 );
