@@ -1,5 +1,6 @@
 import {Helmet} from 'react-helmet'
 import { Link } from "react-router-dom";
+import HeroPicture from './assets/Eagle.webp'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FooterSection from './footer';
 // import './components.css';
@@ -8,7 +9,10 @@ function SlinderNews(){
     return(
         <>
         <div className='slideshow'>
-            <h1>SLIDESHOW</h1>
+            <img src={HeroPicture} alt=""/>
+            <div className='content-box'>
+                <h1>SLIDESHOW</h1>
+            </div>
         </div>
         </>
     );
@@ -19,7 +23,7 @@ function TabProjects(){
 return(
     <>
     <div className='col-6 tab p-5'>
-        <ul className=''>
+        <ul className='tab-list'>
             <li className='tab'>{x} <b>Books</b> </li>
             <li className='tab'>{y} <b>Reports</b> </li>
             <li className='tab'>{z} <b>Contributions</b> </li>

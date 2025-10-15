@@ -7,18 +7,18 @@ function AboutTab(){
     return(
         <>
         <div className='col-6 tab p-5'>
-            <ul className=''>
+            <ul className='tab-list'>
                 <li className='tab'>{x} <b>Personality</b></li>
                 <li className='tab'>{y} <b>Tech-Stack</b></li>
                 <li className='tab'>{z} <b>Beliefs</b></li>
             </ul>
 
             <div className='content'>
-                <h1>My Personality</h1>
+                <h3>My Personality</h3>
                 <p>Something about my personality</p>
             </div>
             <div className='content'>
-                <h1>Tech-Stack</h1>
+                <h3>Tech-Stack</h3>
                 <p>Something about my tech-stack</p>
                             {/* <ul>
                                 <li>C/C++</li>
@@ -36,7 +36,7 @@ function AboutTab(){
                             </ul> */}
             </div>
             <div className='content'>
-                <h1>My Beliefs</h1>
+                <h3>My Beliefs</h3>
                 <p>Something about my Beliefs</p>
             </div>
         </div>
