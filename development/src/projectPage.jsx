@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import HeroPicture from './assets/Eagle.webp'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import FooterSection from './footer';
+import { useState } from 'react';
 // import './components.css';
 
 function SlinderNews(){
@@ -20,26 +21,33 @@ function SlinderNews(){
 
 function TabProjects(){
     let x = "📖", y = "📊",z = "🛠";
+
+    const [toggle,setToggle] = useState();
+    
+        function updateToggle(i){
+            setToggle(i);
+    }
+
 return(
     <>
-    <div className='col-6 tab p-5'>
+    <div className='tab-section'>
         <ul className='tab-list'>
-            <li className='tab'>{x} <b>Books</b> </li>
-            <li className='tab'>{y} <b>Reports</b> </li>
-            <li className='tab'>{z} <b>Contributions</b> </li>
+            <li className='tab' onClick={()=>updateToggle(1)}>{x} <b>Books</b> </li>
+            <li className='tab' onClick={()=>updateToggle(2)}>{y} <b>Reports</b> </li>
+            <li className='tab' onClick={()=>updateToggle(3)}>{z} <b>Contributions</b> </li>
         </ul>
 
-        <div className='content'>
+        <div className={toggle===1?'show-content':'content'}>
             <p>This section will include the books I have written alone or concurrently with other authors.</p>
         </div>
-        <div className='content'>
+        <div className={toggle===2?'show-content':'content'}>
             <p>Below are the reports I have written</p>
             <ol>
                 <li><a href="">Employee's Satisfaction</a></li>
                 <li><a href="https://rpubs.com/LordEagle/TSA1">Forecasting the Sales of Food & Beverages of RSA</a> </li>
             </ol>
         </div>
-        <div className ='content'>
+        <div className={toggle===3?'show-content':'content'}>
            <p> I haven't contributed to any open-source project yet.</p>
         </div>
     </div>
@@ -68,6 +76,7 @@ function CurrentProject(){
     return(
         <>
         <div className='current-project'>
+            {/* <img src={HeroPicture} alt=""/> */}
             <h1>Currently Working on</h1>
             <div className='card-container'>
             <h3>Data Group Consulting</h3>
@@ -89,11 +98,11 @@ export default function ProjectPage(){
             <title>Projects | Katleho Nyoni</title>
         </Helmet>
             {/* <h1>Projects</h1> */}
-            <SlinderNews />
+            {/* <SlinderNews /> */}
             <div className='project-tabs'>
                 <TabProjects />
             </div>
-            <MainProjects />
+            {/* <MainProjects /> */}
             <CurrentProject />
             <FooterSection />
         </>
