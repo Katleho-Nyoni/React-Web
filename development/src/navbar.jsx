@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import iLogo from './assets/iLogo.png';
 import Katieum from './assets/KATIEUM.svg';
 // import home from "@iconify-icons/mdi/home"
-// import {Icon, InlineIcon} from "@iconify/react"
+import {Icon, InlineIcon} from "@iconify/react"
 
 
 export default function NavBar(){
@@ -20,15 +20,15 @@ export default function NavBar(){
                     {/* <li><Link to='/'> <Icon icon={home}/> Home</Link></li> */}
                     <li><Link to='/about'>About</Link></li>
                     {/* <li><Link to='/about'><Icon icon={about}/> About</Link></li> */}
-                    <li><Link to='/contact'>Contact</Link></li>
+                    {/* <li><Link to='/contact'>Contact</Link></li> */}
                     {/* <li><Link to='/contact'><Icon icon={contact}/> Contact</Link></li> */}
                     <li><Link to='/projects'>Projects</Link></li>
                     {/* <li><Link to='/projects'><Icon icon={project}/> Projects</Link></li> */}
+                    <li> <Link to='/katieum'> <InlineIcon icon={Katieum}/> Katieum</Link> </li>
+                    <li> <Link to='/products'className="product-btn">Products</Link> </li>
                 </ul>
 
-                <a href="" target="https://katieum.co.za" >
-                    <img src={Katieum} alt="Katieum Logo" />
-                </a>
+                
             </nav>
         </>
     );
