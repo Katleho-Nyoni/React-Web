@@ -6,39 +6,39 @@ function AboutTab(){
     let x = "🦅",y = "💻", z = "☯";
     return(
         <>
-        <div className='tab-section'>
-            <Tabs>
-            <TabList className='tab-list'>
-                <Tab className='tab'>{x} <b>Personality</b></Tab>
-                <Tab className='tab'>{y} <b>Tech-Stack</b></Tab>
-                <Tab className='tab'>{z} <b>Beliefs</b></Tab>
-            </TabList>
+        <div className='col-6 tab p-5'>
+            <ul className=''>
+                <li className='tab'>{x} <b>Personality</b></li>
+                <li className='tab'>{y} <b>Tech-Stack</b></li>
+                <li className='tab'>{z} <b>Beliefs</b></li>
+            </ul>
 
-            <TabPanel className='tab-panel'>
-                <p>My Personality</p>
-            </TabPanel>
-            <TabPanel className='tab-panel'>
-                <div className='tech-stack'>
-                    <ul>
-                        <li>C/C++</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>JavaScript</li>
-                        <li>LangGraph</li>
-                        <li>LaTeX</li>
-                        <li>MATLAB</li>
-                        <li>NextJS</li>
-                        <li>NodeJS/ExpressJS</li>
-                        <li>R/RStudio</li>
-                        <li>ReactJS</li>
-                        <li>SQL/PostgresSQL</li>
-                    </ul>
-                </div>
-            </TabPanel>
-            <TabPanel className='tab-panel'>
-                <p>A self-proclaimed Philosopher at heart.</p>
-            </TabPanel>
-        </Tabs>
+            <div className='content'>
+                <h1>My Personality</h1>
+                <p>Something about my personality</p>
+            </div>
+            <div className='content'>
+                <h1>Tech-Stack</h1>
+                <p>Something about my tech-stack</p>
+                            {/* <ul>
+                                <li>C/C++</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>JavaScript</li>
+                                <li>LangGraph</li>
+                                <li>LaTeX</li>
+                                <li>MATLAB</li>
+                                <li>NextJS</li>
+                                <li>NodeJS/ExpressJS</li>
+                                <li>R/RStudio</li>
+                                <li>ReactJS</li>
+                                <li>SQL/PostgresSQL</li>
+                            </ul> */}
+            </div>
+            <div className='content'>
+                <h1>My Beliefs</h1>
+                <p>Something about my Beliefs</p>
+            </div>
         </div>
         </>
     );
@@ -54,7 +54,7 @@ export default function AboutPage(){
                 <p>Katleho Nyoni is also an author with the pen name "Lord Eagle". 
                 His contributions not only span teaching, technology and the arts,
                 but are also rooted in philosophy and UBUNTU.</p>
-                {/* <AboutTab /> */}
+                <AboutTab />
             </div>
             <FooterSection />
         </>
