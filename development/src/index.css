@@ -80,8 +80,9 @@ nav{
 }
 
 nav img{
-  height:12vh;
-  justify-content: flex-start;
+  height:14vh;
+  justify-content:initial;
+  align-items:self-start;
   /* ali */
 }
 /* Link{
@@ -161,7 +162,7 @@ Icon{
   100% {--gradient-angle: 360deg}
 }
 
-.content-container::before, .content-container::after,.secret::before,.secret::after{
+.content-container::before, .content-container::after{
   content: "";
   position: absolute;
   inset: -0.3rem;
@@ -181,23 +182,23 @@ Icon{
   border-bottom: 0.1px SOLID white;
 }
 
-.tab-list:hover{
+/* .tab-list:hover{
   cursor: pointer;
-}
+} */
 
-.tab-section{
-  /* height: 20rem; */
+/* .tab-section{
+  height: 20rem;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  /* position:absolute; */
-}
+  position:absolute;
+} */
 
-.tab-panel {
+/* .tab-panel {
   display: list-item;
   justify-items: center;
 
-}
+} */
 
 .tech-stack {
   display: flex;
@@ -371,10 +372,4 @@ input:focus{
   }
 }
 
-.sandlana-secret{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
