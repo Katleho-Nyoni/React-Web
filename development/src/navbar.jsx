@@ -24,7 +24,7 @@ export default function NavBar(){
                     {/* <li><Link to='/contact'><Icon icon={contact}/> Contact</Link></li> */}
                     <li><Link to='/projects'>Projects</Link></li>
                     {/* <li><Link to='/projects'><Icon icon={project}/> Projects</Link></li> */}
-                    <li> <Link to='/katieum'> <InlineIcon icon={Katieum}/> Katieum</Link> </li>
+                    <li> <Link to='/katieum'> <Icon icon={Katieum}/> Katieum</Link> </li>
                     <li> <Link to='/products'className="product-btn">Products</Link> </li>
                 </ul>
 

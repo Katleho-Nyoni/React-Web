@@ -104,7 +104,7 @@ export default function ProjectPage(){
             </div>
             {/* <MainProjects /> */}
             <CurrentProject />
-            <FooterSection />
+            {/* <FooterSection /> */}
         </>
     );
 }

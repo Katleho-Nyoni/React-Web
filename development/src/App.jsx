@@ -5,6 +5,8 @@ import HomePage from './homePage'
 import AboutPage from './aboutPage'
 import ContactPage from './contactPage'
 import ProjectPage from './projectPage'
+import KatieumPage from './katieumPage'
+import ProductsPage from './prodPage'
 
 const routes = [
   { path: '/', element: <Layout />,

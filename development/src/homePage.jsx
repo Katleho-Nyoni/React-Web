@@ -44,7 +44,7 @@ function LandingDisplay(){
                 {/* <button>Learn More</button> */}
             </div>
         </div>
-        <FooterSection />
+        {/* <FooterSection /> */}
     </>
     );
 }

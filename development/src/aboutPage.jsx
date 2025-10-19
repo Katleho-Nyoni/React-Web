@@ -64,7 +64,7 @@ export default function AboutPage(){
                 but are also rooted in philosophy and UBUNTU.</p>
                 <AboutTab />
             </div>
-            <FooterSection />
+            {/* <FooterSection /> */}
         </>
     );
 }
