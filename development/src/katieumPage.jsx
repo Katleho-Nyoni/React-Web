@@ -1,14 +1,14 @@
-import Eagle from './assets/Eagle.webp'
+import Particles from './assets/Jumping-Particles.mp4'
 import KatM from './assets/KATIEUM.svg'
 
 export default function KatieumPage() {
     return (
         <>
-            <div >
-                {/* <img src={Eagle} alt="" /> */}
-                <div >
+            <div className='katieum-header'>
+                <video src={Particles} autoPlay loop muted></video>
+                <span >
                     <img src={KatM} alt="" />
-                </div>
+                </span>
             </div>
 
             <div className='Highlights'>

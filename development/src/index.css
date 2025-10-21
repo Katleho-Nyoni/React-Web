@@ -93,13 +93,19 @@ nav img{
 } */
 
 
-.Hero-Section img{
+.Hero-Section img {
   height: 100vh;
   width: 100%;
   object-fit: cover;
   opacity: 0.6;
   /* object-position: -1; */
   /* z-index: -1; */
+}
+
+video {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 .current-project img{
