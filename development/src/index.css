@@ -158,6 +158,17 @@ video {
     align-items:center;
 }
 
+.articles a{
+  color: darkblue;
+  font-weight: 600;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .card-container {
   /* background-color: #032F40; #D9E3EF-Pale background for light, elegant feel */
     color: white;
@@ -289,7 +300,25 @@ video {
 
 .slideshow, .tab-section, .main-project, .current-project{
   height: 100vh;
-  border-bottom: 0.1px SOLID white;
+  /* border-bottom: 0.1px SOLID white; */
+}
+
+.tab.active {
+  background:white;        /* accent color */
+  color: black;
+  font-weight:700;
+  padding: .5rem;
+  border-radius: .4rem;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(11,116,255,0.12);
+}
+
+.tab:hover{
+  background: grey;
+  padding: .5rem;
+  border-radius: .4rem;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(11,116,255,0.12);
 }
 
 .tab-list{

@@ -1,12 +1,10 @@
 import {Helmet} from 'react-helmet'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import FooterSection from './footer';
 import { useState } from 'react';
 
 function AboutTab(){
     let x = "🦅",y = "💻", z = "☯";
 
-    const [toggle,setToggle] = useState();
+    const [toggle,setToggle] = useState(1);
 
     function updateToggle(i){
         setToggle(i);
@@ -16,9 +14,9 @@ function AboutTab(){
         <>
         <div className='col-6 tab p-5'>
             <ul className='tab-list'>
-                <li className='tab' onClick={()=>updateToggle(1)}>{x} <b>Personality</b></li>
-                <li className='tab' onClick={()=>updateToggle(2)}>{y} <b>Tech-Stack</b></li>
-                <li className='tab' onClick={()=>updateToggle(3)}>{z} <b>Beliefs</b></li>
+                <li className={toggle===1 ? 'tab active' : 'tab'} onClick={()=>updateToggle(1)}>{x} <b>Personality</b></li>
+                <li className={toggle===2 ? 'tab active' : 'tab'} onClick={()=>updateToggle(2)}>{y} <b>Tech-Stack</b></li>
+                <li className={toggle===3 ? 'tab active' : 'tab'} onClick={()=>updateToggle(3)}>{z} <b>Beliefs</b></li>
             </ul>
 
             <div className={toggle===1?'show-content':'content'}>
