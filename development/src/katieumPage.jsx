@@ -18,14 +18,13 @@ export default function KatieumPage() {
                     <h2>Documentation</h2>
                     <br />
                     <br />
-                    <button>Read</button>
+                    <button onClick={() => window.open("https://github.com/E4Katieum/Documentation", "_blank")}>Read</button>
                 </div>
                 <div className='content-container'>
                     <h2>Mathematics</h2>
                     <br />
                     <br />
-                    <button>Book</button>
-                    {/* <button>Lessons</button> */}
+                    <button onClick={() => window.open("https://e4katieum.github.io/Mathematics", "_blank")}>Book</button>
                 </div>
 
             </div>
