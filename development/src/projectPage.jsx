@@ -1,10 +1,7 @@
 import {Helmet} from 'react-helmet'
 import { Link } from "react-router-dom";
 import HeroPicture from './assets/Eagle.webp'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import FooterSection from './footer';
 import { useState } from 'react';
-// import './components.css';
 
 function SlinderNews(){
     return(
@@ -42,10 +39,11 @@ return(
         </div>
         <div className={toggle===2?'show-content':'content'}>
             <p>Below are the reports I have written</p>
-            <ol>
-                <li><a href="">Employee's Satisfaction</a></li>
-                <li><a href="https://rpubs.com/LordEagle/TSA1">Forecasting the Sales of Food & Beverages of RSA</a> </li>
-            </ol>
+            <span className='articles'>
+                <p>1. Will I Eventually be Employed? A Mathematical Approach</p>
+                <p>2. Forecasting the sales of Food & Beverages of RSA</p>
+                <p>3. Employee's Satisfaction</p>
+            </span>
         </div>
         <div className={toggle===3?'show-content':'content'}>
            <p> I haven't contributed to any open-source project yet.</p>
