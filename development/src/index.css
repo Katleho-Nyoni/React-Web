@@ -131,16 +131,22 @@ video {
   align-content: center;
 }
 
-/* .current-project img{
+.current-project{
+  background-image: url(./assets/pexels-visionmonkeyandy-1034662.jpg);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat:no-repeat;
   background-attachment:fixed;
-  height: 100vh;
-  width: 100%;
-  object-position: -1;
+  background-position: 0;
+  /* height: 100vh; */
+  /* width: 100%; */
+  /* object-position: -1; */
   z-index: -1;
-  opacity: 0.4;
-} */
+  opacity: 0.7;
+}
+
+.current-project h3,  button{
+  color: crimson;
+}
 
 .current-project span {
   display:flex;

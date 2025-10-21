@@ -73,7 +73,7 @@ function CurrentProject(){
     return(
         <>
         <div className='current-project'>
-            <img src={City} alt=""/>
+            {/* <img src={City} alt=""/> */}
             <span className='card-area'>
                 <div className='card-container'>
                     <h3>Katieum</h3>
