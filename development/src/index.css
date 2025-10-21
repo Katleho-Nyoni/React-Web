@@ -25,9 +25,11 @@
      to have it reach the ends*/
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   font-weight: 500;
@@ -93,7 +95,7 @@ nav img{
 } */
 
 
-.Hero-Section img {
+.Hero-Section img, .current-project img {
   height: 100vh;
   width: 100%;
   object-fit: cover;
@@ -108,7 +110,7 @@ video {
   width: 100%;
 }
 
-.katieum-header span{
+.katieum-header span, .current-project span{
   position: absolute;
   top: 0;
   left: 0;
@@ -120,20 +122,65 @@ video {
   align-items: center;
 }
 
+.current-project span {
+  display: flexbox;
+}
+
 .product-content{
   height: 75.5vh;
   align-content: center;
 }
 
-.current-project img{
+/* .current-project img{
   background-size: cover;
   background-repeat: repeat;
   background-attachment:fixed;
   height: 100vh;
   width: 100%;
-  /* object-position: -1; */
-  /* z-index: -1; */
+  object-position: -1;
+  z-index: -1;
   opacity: 0.4;
+} */
+
+.current-project span {
+  display:flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 1rem;
+    /* gap: 1rem; */
+    justify-content: center;
+    align-items:center;
+}
+
+.card-container {
+  /* background-color: #032F40; #D9E3EF-Pale background for light, elegant feel */
+    color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+    padding: 2rem 1.5rem;
+    margin: 0.5rem;
+    min-width: 300px;
+    max-width: 350px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-container p{
+    /* font-size: 1rem; */
+    color: white;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    transition: all 0.3s ease;
 }
 
 .slideshow{
@@ -296,16 +343,16 @@ video {
   height: 25rem;
 } */
 
-.card-container{
+/* .card-container{
   justify-self: center;
   width: 30vw;
-  /* background-color: rgb(49, 208, 236); */
+  background-color: rgb(49, 208, 236);
   gap: 2rem;
   border-radius: 12px;
   padding: 1rem;
   outline: 1px SOLID whitesmoke;
   position: relative;
-}
+} */
 
 
 
