@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 import iLogo from './assets/iLogo.png';
-import Katieum from './assets/KATIEUM.svg';
-// import home from "@iconify-icons/mdi/home"
-import {Icon, InlineIcon} from "@iconify/react"
 
 
 export default function NavBar(){
@@ -24,7 +21,7 @@ export default function NavBar(){
                     {/* <li><Link to='/contact'><Icon icon={contact}/> Contact</Link></li> */}
                     <li><Link to='/projects'>Projects</Link></li>
                     {/* <li><Link to='/projects'><Icon icon={project}/> Projects</Link></li> */}
-                    <li> <Link to='/katieum'> <Icon icon={Katieum}/> Katieum</Link> </li>
+                    <li> <Link to='/katieum'> Katieum</Link> </li>
                     <li> <Link to='/products'className="product-btn">Products</Link> </li>
                 </ul>
 
