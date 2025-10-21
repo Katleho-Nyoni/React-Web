@@ -7,7 +7,9 @@ export default function KatieumPage() {
             <div className='katieum-header'>
                 <video src={Particles} autoPlay loop muted></video>
                 <span >
-                    <img src={KatM} alt="" />
+                    <a href="https://katieum.co.za" target="_blank" rel="noopener noreferrer">
+                        <img src={KatM} alt="Katieum Logo" />
+                    </a>
                 </span>
             </div>
 
