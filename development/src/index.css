@@ -108,6 +108,15 @@ video {
   width: 100%;
 }
 
+.katieum-header span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
 .current-project img{
   background-size: cover;
   background-repeat: repeat;
