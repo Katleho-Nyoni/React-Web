@@ -120,7 +120,10 @@ video {
   align-items: center;
 }
 
-
+.product-content{
+  height: 75.5vh;
+  align-content: center;
+}
 
 .current-project img{
   background-size: cover;
