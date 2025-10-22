@@ -12,7 +12,7 @@ function AboutTab(){
 
     return(
         <>
-        <div className='col-6 tab p-5'>
+        <div className='about'>
             <ul className='tab-list'>
                 <li className={toggle===1 ? 'tab active' : 'tab'} onClick={()=>updateToggle(1)}>{x} <b>Personality</b></li>
                 <li className={toggle===2 ? 'tab active' : 'tab'} onClick={()=>updateToggle(2)}>{y} <b>Tech-Stack</b></li>
@@ -26,20 +26,13 @@ function AboutTab(){
             <div className={toggle===2?'show-content':'content'}>
                 <h3>Tech-Stack</h3>
                 <p>Something about my tech-stack</p>
-                            {/* <ul>
+                            <ul>
                                 <li>C/C++</li>
-                                <li>CSS</li>
-                                <li>HTML</li>
-                                <li>JavaScript</li>
-                                <li>LangGraph</li>
                                 <li>LaTeX</li>
                                 <li>MATLAB</li>
-                                <li>NextJS</li>
-                                <li>NodeJS/ExpressJS</li>
                                 <li>R/RStudio</li>
                                 <li>ReactJS</li>
-                                <li>SQL/PostgresSQL</li>
-                            </ul> */}
+                            </ul>
             </div>
             <div className={toggle===3?'show-content':'content'}>
                 <h3>My Beliefs</h3>
@@ -57,9 +50,7 @@ export default function AboutPage(){
             <title>About Lord Eagle</title>
         </Helmet>
             <div className='about-section'>
-                <p>Katleho Nyoni is also an author with the pen name "Lord Eagle". 
-                His contributions not only span teaching, technology and the arts,
-                but are also rooted in philosophy and UBUNTU.</p>
+                <p>This Section Is still being edited. It will be available at the end of today.</p>
                 <AboutTab />
             </div>
             {/* <FooterSection /> */}
