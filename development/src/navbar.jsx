@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import iLogo from './assets/iLogo.png';
+import iLogo from './assets/iLogo.webp';
 
 
 export default function NavBar(){
