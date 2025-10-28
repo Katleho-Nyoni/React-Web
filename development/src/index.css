@@ -152,7 +152,7 @@ video {
 }
 
 .current-project h3,  button{
-  color: crimson;
+  color: goldenrod;
 }
 
 .current-project span {
@@ -166,7 +166,7 @@ video {
 }
 
 .articles a{
-  color: darkblue;
+  color: crimson;
   font-weight: 600;
 }
 
@@ -248,6 +248,11 @@ ol {
   font-style: italic;
   margin-top: 1rem;
   color:beige;
+}
+
+.project-tabs{
+  margin: 0;
+  padding: 0;
 }
 
 .content{
