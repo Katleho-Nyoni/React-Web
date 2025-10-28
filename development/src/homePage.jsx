@@ -20,9 +20,6 @@ function LandingDisplay(){
         </div>
         <div className='section-intro'>
             <h1>Currently Learning</h1>
-            <h3>This Website was built with dark mode in mind. If you can see this,
-            <br />
-             it means your device is in light/default mode, and you might not get the best of this website. Enjoy!</h3>
         </div>
         <div className='Highlights'>
             {/* <p>I'm constantly learning, harnessing ideas & integrating different fields to implement my ideas. Below are the things I'm currently learning:</p> */}
