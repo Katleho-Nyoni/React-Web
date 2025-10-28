@@ -1,5 +1,5 @@
-import Particles from './assets/Jumping-Particles.mp4'
-import KatM from './assets/KATIEUM.jpg'
+import Particles from './assets/Jumping-Particles.webm'
+import KatM from './assets/KATIEUM.webp'
 
 export default function KatieumPage() {
     return (
