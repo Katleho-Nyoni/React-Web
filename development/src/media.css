@@ -1,0 +1,28 @@
+@media (max-width: 400px) {
+  /* phone styles */
+}
+@media (min-width: 401px) and (max-width: 768px) {
+  /* tablets */
+}
+
+/** 
+320px - 480px : Mobile Portrait
+481px - 767px : Mobile Landscape
+768px - 1024px : Tablet Portrait
+1025px - 1200px : Tablet Landscape
+1201px - 1600px : Desktop
+1601px and more : Large Screens
+
+EXACT WIDTH:
+@media (width: 960px)
+
+@960px & SMALLER:
+@media (max-width: 960px)
+
+960px & LARGER:
+@media (min-width: 960px)
+
+BONUS:
+@media (min-width: 300px) and @media (max-width: 960px)
+
+*/
