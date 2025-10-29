@@ -6,6 +6,10 @@
   nav img {
     height: fit-content;
   }
+
+  .Hero-Section img {
+    object-position: 50%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -15,6 +19,10 @@
   
   nav img {
     display: none;
+  }
+
+  .Hero-Section img {
+    object-position: 50%;
   }
 }
 
