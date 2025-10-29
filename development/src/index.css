@@ -481,10 +481,6 @@ button:focus-visible {
   color: crimson;
 }
 
-.Hero-Section img {
-  object-position: 70% 70%; /* Works only of Firefox*/
-}
-
 .btn{
     width: 15.5rem;
     height: 2.5rem;
@@ -512,10 +508,6 @@ button:focus-visible {
     outline: 1px SOLID grey;
     
 }
-
-.card-container button {
-    background-color: #f9f9f9;
-  }
 
 /* MEDIA QUERIES */
 
