@@ -40,10 +40,10 @@ return(
             <p>Below are the reports I have written:</p>
             <span className='articles'>
                 <ol>
-                    <li> <a href="https://drive.google.com/drive/folders/1jLydISu6ojVFPYySN2D8LzKauTYtn4O8">Will I Eventually be Employed? A Mathematical Approach</a></li>
+                    <li> <a href="https://drive.google.com/file/d/1yx6hYG5DX5b38VSm1N9BQhHSjbzLme-M/view?usp=drive_link">Will I Eventually be Employed? A Mathematical Approach</a></li>
                     <li> <a href="https://rpubs.com/LordEagle/TSA1">Forecasting the sales of Food & Beverages of RSA</a></li>
-                    <li> <a href="https://drive.google.com/drive/folders/1jLydISu6ojVFPYySN2D8LzKauTYtn4O8">Bone Mineral Density(BMD) Analysis</a></li>
-                    <li> <a href="https://drive.google.com/drive/folders/1jLydISu6ojVFPYySN2D8LzKauTYtn4O8">Employee's Satisfaction</a></li>
+                    <li> <a href="https://drive.google.com/file/d/1_ZkozGcgQoNVbyQLTry9EVKr09Gudy7E/view?usp=drive_link">Bone Mineral Density(BMD) Analysis</a></li>
+                    <li> <a href="https://drive.google.com/file/d/1Mlf8zYsGc4ytmqACW9DkxgwAC5NA_sz6/view?usp=drive_link">Employee's Satisfaction</a></li>
                 </ol>
             </span>
         </div>
